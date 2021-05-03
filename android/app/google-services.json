@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "211011318176",
+    "firebase_url": "https://cafe-brew.firebaseio.com",
+    "project_id": "cafe-brew",
+    "storage_bucket": "cafe-brew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211011318176:android:1c47031fb80be48662f4c5",
+        "android_client_info": {
+          "package_name": "com.example.iiitbhopal_one"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211011318176-sdo9u6e8q56r36vt5hv6vk40m42bfh82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrJZUpD66-k1U2N9pbwBcV43QAOS1GzXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211011318176-sdo9u6e8q56r36vt5hv6vk40m42bfh82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211011318176:android:1df8f8990b86e6b062f4c5",
+        "android_client_info": {
+          "package_name": "com.nimscafe.cafe_brew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211011318176-sdo9u6e8q56r36vt5hv6vk40m42bfh82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrJZUpD66-k1U2N9pbwBcV43QAOS1GzXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211011318176-sdo9u6e8q56r36vt5hv6vk40m42bfh82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
