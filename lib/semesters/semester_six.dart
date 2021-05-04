@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:iiitbhopal_one/ViewPdf.dart';
 import 'package:pdf_flutter/pdf_flutter.dart';
 import 'package:flutter_full_pdf_viewer/flutter_full_pdf_viewer.dart';
-import 'package:flutter_full_pdf_viewer/full_pdf_viewer_plugin.dart';
-import 'package:flutter_full_pdf_viewer/full_pdf_viewer_scaffold.dart';
 
 class Semester_Six extends StatefulWidget {
   final Color color;
@@ -48,25 +47,6 @@ class _Semester_SixState extends State<Semester_Six> {
             ));
           },
         ),
-      ),
-    );
-  }
-}
-
-class ViewPDF extends StatelessWidget {
-  final String fileName;
-  String pathPDF = "";
-  ViewPDF({this.pathPDF, this.fileName});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(fileName),
-        backgroundColor: Colors.deepOrangeAccent,
-      ),
-      body: Container(
-        child: PDF.asset(fileName),
       ),
     );
   }

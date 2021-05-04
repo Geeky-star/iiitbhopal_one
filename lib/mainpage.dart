@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:iiitbhopal_one/calender_screen.dart';
 import 'package:iiitbhopal_one/notes_screen.dart';
+import 'package:iiitbhopal_one/settings_screen.dart';
+import 'package:iiitbhopal_one/syllabus.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -51,17 +54,26 @@ class _MainPageState extends State<MainPage> {
                                 ]),
                           ),
                         ),
-                        Container(
-                          height: 180,
-                          width: 180,
-                          child: Image.asset("assets/images/setting_img.jpg"),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(16),
-                              boxShadow: [
-                                BoxShadow(
-                                    spreadRadius: 2.0, color: Colors.grey[100])
-                              ]),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SettingScreen()));
+                          },
+                          child: Container(
+                            height: 180,
+                            width: 180,
+                            child: Image.asset("assets/images/setting_img.jpg"),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                                boxShadow: [
+                                  BoxShadow(
+                                      spreadRadius: 2.0,
+                                      color: Colors.grey[100])
+                                ]),
+                          ),
                         )
                       ],
                     ),
@@ -76,12 +88,12 @@ class _MainPageState extends State<MainPage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => NotesScreen()));
+                                    builder: (context) => Calender()));
                           },
                           child: Container(
                             height: 180,
                             width: 180,
-                            child: Image.asset("assets/images/user.jpg"),
+                            child: Image.asset("assets/images/calender.png"),
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
@@ -97,13 +109,13 @@ class _MainPageState extends State<MainPage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => NotesScreen()));
+                                    builder: (context) => Syllabus()));
                           },
                           child: Container(
                             height: 180,
                             width: 180,
                             child: Image.asset(
-                              "assets/images/box.jpg",
+                              "assets/images/syllb.png",
                               height: 40,
                               width: 40,
                             ),
