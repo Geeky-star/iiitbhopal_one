@@ -53,12 +53,17 @@ flutter:
   assets:
 
      - assets/images/
-     - assets/syllabus/SYLLABUSIT.pdf
+     - assets/syllabus/IT.pdf
+     - assets/syllabus/ECE.pdf
+     - assets/syllabus/Computer_Science.pdf
      - assets/adbms/
-     - assets/crypto notes/
+     - assets/crypto_notes/
+     - assets/ece-8/
+     - assets/AI/
+     - assets/IOT/
      - assets/images/calender.png
      - assets/images/syllb.png
-     
+     - assets/ac/AC-2020-2021.pdf
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
