@@ -16,6 +16,7 @@ class _Semester_SixState extends State<Semester_Six> {
     "IOT",
     "Cryptography and Information Security"
   ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
