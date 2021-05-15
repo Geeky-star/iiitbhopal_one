@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreens> {
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
       ),
       image: Image.asset(
-        "assets/images/logo.png",
+        "assets/images/iiit_logo.png",
         height: 500,
         width: 500,
       ),
