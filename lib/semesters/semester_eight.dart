@@ -12,11 +12,7 @@ class Semester_Eight extends StatefulWidget {
 class _Semester_EightState extends State<Semester_Eight> {
   @override
   List<String> subjects = [
-    "ADBMS",
-    "Artificial Intelligence",
-    "TCP/IP Web and Technologies",
-    "IOT",
-    "Cryptography and Information Security"
+    "Satellite Communication",
   ];
 
   Widget build(BuildContext context) {
@@ -34,7 +30,7 @@ class _Semester_EightState extends State<Semester_Eight> {
             return Card(
                 child: ListTile(
               title: Text(subjects[index]),
-              leading: Icon(Icons.picture_as_pdf),
+              //leading: Icon(Icons.picture_as_pdf),
               trailing: Icon(
                 Icons.arrow_forward,
                 color: Colors.black,
