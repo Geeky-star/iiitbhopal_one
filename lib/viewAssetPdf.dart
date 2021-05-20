@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pdf_flutter/pdf_flutter.dart';
 
-class ViewPDF extends StatelessWidget {
+class ViewPDFAsset extends StatelessWidget {
   final String fileName;
-  ViewPDF({this.fileName});
+  ViewPDFAsset({this.fileName});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class ViewPDF extends StatelessWidget {
       //backgroundColor: Colors.deepOrangeAccent,
       //),
       body: Container(
-        child: PDF.network(fileName),
+        child: PDF.asset(fileName),
       ),
     );
   }
