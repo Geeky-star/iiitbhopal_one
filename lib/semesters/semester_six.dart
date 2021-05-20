@@ -32,16 +32,14 @@ class _PDFTilesState extends State<PDFTiles> {
     print("data is - ");
     print(FirebaseFirestore.instance
         .collection("Notes")
-        .doc()
+        .doc("semesterFirst")
         .collection("IT")
-        .doc()
         .snapshots());
 
     return FirebaseFirestore.instance
         .collection("Notes")
-        .doc()
+        .doc("semesterFirst")
         .collection("IT")
-        .doc()
         .snapshots();
   }
 
@@ -73,13 +71,24 @@ class _PDFTilesState extends State<PDFTiles> {
                     StreamBuilder(
                       stream: db
                           .collection("Notes")
-                          .doc('semseterFirst')
-                          .collection('IT')
+                          .doc("semesterFirst")
+                          .collection("IT")
                           .snapshots(),
+
+                      //db.collection("Data").snapshots(),
                       builder: (context, snapshot) {
                         print("snapshot data");
-                        print(snapshot.data.docs);
-//                        print(snapshot.data.docs[0]['url'][0]);
+
+                        print(snapshot);
+
+                        print(snapshot.data.docs[1]['subject']);
+
+                        print(db
+                            .collection("Notes")
+                            .doc("semesterFirst")
+                            .collection("IT")
+                            .snapshots());
+
                         if (!snapshot.hasData) {
                           return Text("No notes available");
                         }
@@ -88,24 +97,25 @@ class _PDFTilesState extends State<PDFTiles> {
                             children: [
                               ListView.builder(
                                   shrinkWrap: true,
-                                  itemCount: 1,
+                                  itemCount: snapshot.data.docs.length,
                                   itemBuilder: (context, index) {
-                                    return GestureDetector(
+                                    return ListTile(
+                                      title: Text(
+                                          snapshot.data.docs[index]['subject']),
                                       onTap: () {
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) => SubjectPDFs(
-                                                document: snapshot.data[index],
-                                                length: snapshot
-                                                    .data[index]['url'].length,
-                                                subjectName: snapshot
-                                                    .data[index]['subject'],
+                                                document:
+                                                    snapshot.data.docs[index],
+                                                length: snapshot.data
+                                                    .docs[index]['url'].length,
+                                                subjectName: snapshot.data
+                                                    .docs[index]['subject'],
                                               ),
                                             ));
                                       },
-                                      child:
-                                          Text(snapshot.data[index]['subject']),
                                     );
                                   }),
                             ],
@@ -119,11 +129,6 @@ class _PDFTilesState extends State<PDFTiles> {
               ),
             ),
     );
-  }
-
-  Widget _buildListItem(
-      BuildContext context, DocumentSnapshot document, int length) {
-    return ListTile();
   }
 }
 

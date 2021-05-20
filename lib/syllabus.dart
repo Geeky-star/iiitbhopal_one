@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iiitbhopal_one/ViewPdf.dart';
+import 'package:iiitbhopal_one/viewAssetPdf.dart';
 import 'package:pdf_flutter/pdf_flutter.dart';
 
 class Syllabus extends StatelessWidget {
@@ -8,6 +9,8 @@ class Syllabus extends StatelessWidget {
     "assets/syllabus/Computer_Science.pdf",
     "assets/syllabus/ECE.pdf"
   ];
+
+  List names = ["IT", "Computer Science", "ECE"];
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,7 @@ class Syllabus extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => ViewPDF(
+                        builder: (context) => ViewPDFAsset(
                               fileName: syllbs[index],
                             )));
               },
@@ -33,7 +36,7 @@ class Syllabus extends StatelessWidget {
                   height: 50,
                   width: 100,
                   color: Colors.green[50],
-                  child: Center(child: Text(syllbs[index])),
+                  child: Center(child: Text(names[index])),
                 ),
               ),
             );
