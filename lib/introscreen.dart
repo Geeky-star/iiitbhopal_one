@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iiitbhopal_one/mainpage.dart';
-import 'package:iiitbhopal_one/register.dart';
+import 'package:iiitbhopal_two/mainpage.dart';
+import 'package:iiitbhopal_two/register.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class SplashScreens extends StatefulWidget {

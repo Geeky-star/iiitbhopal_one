@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iiitbhopal_one/ViewPdf.dart';
+import 'package:iiitbhopal_two/ViewPdf.dart';
 
 class Semester_Eight extends StatefulWidget {
   final Color color;

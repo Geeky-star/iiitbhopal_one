@@ -1,4 +1,4 @@
-package com.example.iiitbhopal_one
+package com.example.iiitbhopal_two
 
 import io.flutter.embedding.android.FlutterActivity
 

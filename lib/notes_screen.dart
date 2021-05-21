@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:iiitbhopal_one/semesters/semester_eight.dart';
-import 'package:iiitbhopal_one/semesters/semester_five.dart';
-import 'package:iiitbhopal_one/semesters/semester_four.dart';
-import 'package:iiitbhopal_one/semesters/semester_one.dart';
-import 'package:iiitbhopal_one/semesters/semester_seven.dart';
-import 'package:iiitbhopal_one/semesters/semester_six.dart';
-import 'package:iiitbhopal_one/semesters/semester_two.dart';
+import 'package:iiitbhopal_two/semesters/semester_eight.dart';
+import 'package:iiitbhopal_two/semesters/semester_five.dart';
+import 'package:iiitbhopal_two/semesters/semester_four.dart';
+import 'package:iiitbhopal_two/semesters/semester_one.dart';
+import 'package:iiitbhopal_two/semesters/semester_seven.dart';
+import 'package:iiitbhopal_two/semesters/semester_six.dart';
+import 'package:iiitbhopal_two/semesters/semester_two.dart';
 
 class NotesScreen extends StatefulWidget {
   @override
