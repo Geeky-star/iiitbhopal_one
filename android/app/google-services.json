@@ -37,9 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:211011318176:android:1df8f8990b86e6b062f4c5",
+        "mobilesdk_app_id": "1:211011318176:android:daf01694dbcd49bb62f4c5",
         "android_client_info": {
-          "package_name": "com.nimscafe.cafe_brew"
+          "package_name": "com.example.iiitbhopal_two"
         }
       },
       "oauth_client": [

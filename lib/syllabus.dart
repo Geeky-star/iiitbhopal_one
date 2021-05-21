@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iiitbhopal_one/ViewPdf.dart';
-import 'package:iiitbhopal_one/viewAssetPdf.dart';
+import 'package:iiitbhopal_two/ViewPdf.dart';
+import 'package:iiitbhopal_two/viewAssetPdf.dart';
 import 'package:pdf_flutter/pdf_flutter.dart';
 
 class Syllabus extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iiitbhopal_one/ViewPdf.dart';
+import 'package:iiitbhopal_two/ViewPdf.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:pdf_flutter/pdf_flutter.dart';
 

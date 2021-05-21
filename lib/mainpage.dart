@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:iiitbhopal_one/calender_screen.dart';
-import 'package:iiitbhopal_one/notes_screen.dart';
-import 'package:iiitbhopal_one/settings_screen.dart';
-import 'package:iiitbhopal_one/syllabus.dart';
+import 'package:iiitbhopal_two/calender_screen.dart';
+import 'package:iiitbhopal_two/notes_screen.dart';
+import 'package:iiitbhopal_two/settings_screen.dart';
+import 'package:iiitbhopal_two/syllabus.dart';
 
 class MainPage extends StatefulWidget {
   @override
